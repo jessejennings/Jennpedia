@@ -32,4 +32,9 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'pundit'
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'redcarpet'
+
 

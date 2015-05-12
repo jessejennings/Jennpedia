@@ -1,0 +1,18 @@
+development:
+  cloud_name: hsgsdjisb
+  api_key: '372393954233174'
+  api_secret: "-cGuMKn6a7kNDPHXM4y62b2Rxo8"
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hsgsdjisb
+  api_key: '372393954233174'
+  api_secret: "-cGuMKn6a7kNDPHXM4y62b2Rxo8"
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hsgsdjisb
+  api_key: '372393954233174'
+  api_secret: "-cGuMKn6a7kNDPHXM4y62b2Rxo8"
+  enhance_image_tag: true
+  static_image_support: false

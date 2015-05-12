@@ -1,3 +1,29 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+.header {
+  font-family: Arial, "new times roman";
+  color: #ff9933;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  background: #808080;
+  padding: 10px 10px 10px 10px;
+  width: 700px;
+  margin: 40px auto 40px auto;
+}
+.p {
+  font-family: arial, "new times roman";
+  text-align: center;
+  color: #ffffff;
+  font-size: 25px;
+  margin: 10px;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+

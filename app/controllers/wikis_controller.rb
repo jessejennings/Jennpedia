@@ -1,4 +1,5 @@
 class WikisController < ApplicationController
+
   def index
     @wikis = Wiki.all
   end
@@ -51,6 +52,6 @@ class WikisController < ApplicationController
   private
 
   def wiki_params
-    params.require(:wiki).permit(:title, :description, :public)
+    params.require(:wiki).permit(:title, :description, :picture, :picture_cache, :body, :private)
   end
 end
