@@ -1,13 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :wikis
+  has_many :wikis, dependent: :destroy
 
-  def admin?
-    role == 'admin'
-  end
-
-  def moderator?
-    role == 'moderator'
-  end
 
 
   devise :database_authenticatable, :registerable,

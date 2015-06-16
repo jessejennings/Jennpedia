@@ -16,8 +16,10 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "Home", root_path %></li>
         <li><%=link_to "About", about_path %></li>
-        <li><%= link_to_if current_user, "Wikis", wikis_path %></li>
-        <li><%= link_to_if current_user, "New", new_wiki_path %></li>
+        <% if current_user %>
+          <li><%= link_to "Wikis", wikis_path %></li>
+          <li><%= link_to "New", new_wiki_path %></li>
+        <% end %>
         </ul>
       
       <ul class="nav navbar-nav navbar-right">

@@ -10,6 +10,7 @@ class WikisController < ApplicationController
 
   def create
     @wiki = Wiki.new(wiki_params)
+      
       if @wiki.save
         redirect_to @wiki, notice: "Commence New Wiki."
       else
