@@ -2,14 +2,17 @@ class WikisController < ApplicationController
 
   def index
     @wikis = Wiki.all
+    authorize @wikis
   end
 
   def new
     @wiki = Wiki.new
+    authorize @wiki
   end
 
   def create
     @wiki = Wiki.new(wiki_params)
+    authorize @wiki
       
       if @wiki.save
         redirect_to @wiki, notice: "Commence New Wiki."
@@ -25,10 +28,12 @@ class WikisController < ApplicationController
 
   def edit
     @wiki = Wiki.find(params[:id])
+    authorize @wiki
   end
 
   def update
     @wiki = Wiki.find(params[:id])
+    authorize @wiki
     
       if @wiki.update_attributes(wiki_params)
         redirect_to @wiki
