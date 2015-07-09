@@ -1,8 +1,8 @@
-html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+html, body {
   padding: 0;
   border: 0;
   margin: 0;
-  font: inherit;
+  #font: inherit;
   font-size: 100%;
 }
 
@@ -17,13 +17,29 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a {
   width: 700px;
   margin: 40px auto 40px auto;
 }
-.p {
+.h1 {
   font-family: arial, "new times roman";
   text-align: center;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 100%;
+  margin: 10px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.h2 {
+  font-family: arial, "new times roman";
+  text-align: center;
+  color: #ffffff;
+  font-size: 50%;
   margin: 10px;
   border-bottom: 2px solid #aaaaaa;
 }
 
+.p {
+  font-family: arial, "new times roman";
+  text-align: center;
+  color: #ffffff;
+  font-size: 12;
+  margin: 10px;
+  border-bottom: 2px solid #aaaaaa;
+}
 

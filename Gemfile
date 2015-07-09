@@ -27,7 +27,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 end
 
-gem 'spring', '1.3.4'
+gem 'spring', '1.3.6'
 gem 'devise'
 gem 'pundit'
 gem 'carrierwave'
