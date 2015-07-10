@@ -1,16 +1,13 @@
-admin = User.new(
-  email:    'admin@example.com',
-  password: 'helloworld',
-  role:     'admin' 
-)
-admin.skip_confirmation!
-admin.save!
+require 'faker'
 
- moderator = User.new(
-   email:    'moderator@example.com',
-   password: 'helloworld',
-   role:     'moderator'
- )
- moderator.skip_confirmation!
- moderator.save!
+50.times do 
+  Wiki.create!(
+    title:  Faker::Lorem.sentence,
+    body:   Faker::Lorem.paragraph
+  )
 
+end
+wikis = Wiki.all
+
+puts "Seed finished"
+puts "#{Wiki.count} wikis created"
